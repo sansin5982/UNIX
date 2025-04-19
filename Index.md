@@ -262,7 +262,7 @@ class="email">sandeep@DESKTOP-AVG9Q5A</a>:~$</td>
 
 ## man
 
--   Use to find all commands relavant to specific commands
+-   Provides comprhensiv manual for a specific command.
 
 <table>
 <colgroup>
