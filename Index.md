@@ -1,4 +1,4 @@
-# Introduction
+# Chapter 1- Introduction
 
 Linux is an open-source operating system, just like UNIX, that powers a
 wide range of devices, from servers to smartphones. It offers stability,
@@ -75,7 +75,7 @@ another directory inside it. It is like an inverted tree.
 -   /usr/tmp means tmp is inside usr which is inside top level directory
     “root”.
 
-<img src="Directory.png" width="1600" style="display: block; margin: auto;" />
+<img src="Figures/Directory.png" width="1600" style="display: block; margin: auto;" />
 
 ###### Image Source: <https://www.serverkaka.com/2018/01/key-locations-in-linux-file-system_21.html>
 
