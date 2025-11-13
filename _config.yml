@@ -1,9 +1,0 @@
-theme: jekyll-theme-cayman
-
-# Navigation (Optional)
-title: "LINUX fundamentals"
-description: "Fundamentals of Linux."
-
-# Enable navigation links
-include:
-  - chapters/
