@@ -1,0 +1,9 @@
+theme: jekyll-theme-cayman
+
+# Navigation (Optional)
+title: "UNIX Fundamentals"
+description: "Fundamentals of UNIX"
+
+# Enable navigation links
+include:
+  - chapters/
