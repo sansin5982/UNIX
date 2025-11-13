@@ -70,3 +70,55 @@ the Linux ecosystem:
     machines); today, they’re apps like GNOME Terminal, Konsole, or even
     web-based ones. The terminal handles input/output, but the shell
     does the actual processing.
+
+In summary:
+
+-   Kernel: Manages the hardware (brain of the OS).
+-   Shell: Interprets commands (command processor).
+-   Terminal: Displays the shell (user interface window).
+
+To illustrate:
+
+-   Open a terminal (e.g., via Ctrl+Alt+T on Ubuntu).
+-   The prompt (e.g., `user@host:~$`) is provided by the shell.
+-   Type `echo $SHELL` to see your current shell path (e.g.,
+    `/bin/bash`).
+
+<!-- -->
+
+    ps -p $$  # Shows the process of your current shell (e.g., bash)
+
+### Types of Shells (bash, zsh, sh, ksh, fish)
+
+Shells vary in features, syntax, and usability. Here’s a breakdown of
+common ones:
+
+-   **sh (Bourne Shell)**: The original Unix shell from 1977.
+    Minimalistic, with basic scripting support. It’s POSIX-compliant
+    (standard for portability) and often used for simple scripts. Many
+    systems symlink `/bin/sh` to a compatible shell like Dash for speed.
+    Pros: Lightweight. Cons: Lacks modern features like tab completion.
+-   **bash (Bourne Again SHell)**: Default on most Linux distros (e.g.,
+    Ubuntu, Fedora). Extends sh with features like command history, tab
+    completion, aliases, and job control. Great for scripting and
+    interactive use. Pros: Widely available, powerful scripting (e.g.,
+    loops, conditionals). Cons: Can be slower for simple tasks.
+-   **ksh (Korn Shell)**: Developed in 1983, it combines features from
+    sh and csh (C Shell). Includes advanced scripting like arrays and
+    floating-point math. Variants like pdksh or mksh are common. Pros:
+    Efficient for programming. Cons: Less popular today.
+-   **zsh (Z Shell)**: Extends bash with better autocompletion, themes
+    (via Oh My Zsh framework), and plugins. Popular among power users
+    (e.g., default on macOS since 2019). Pros: Highly customizable,
+    spell correction. Cons: Steeper learning curve. **fish (Friendly
+    Interactive SHell)**: Modern, user-friendly shell with
+    autosuggestions, syntax highlighting, and web-based config. No need
+    for complex scripting syntax. Pros: Beginner-friendly, no
+    installation of extra tools needed. Cons: Not POSIX-compliant, so
+    some scripts may not run without changes.
+
+To check or change shells:
+
+    echo $SHELL  # Current shell
+    chsh -s /bin/zsh  # Change to zsh (requires logout/login)
+    cat /etc/shells  # List available shells
